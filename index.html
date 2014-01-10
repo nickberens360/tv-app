@@ -26,8 +26,15 @@ header{
 	width:100%;
 	background:#4E4C4C;
 }
+.logo{
+	position:absolute;
+	width:500px;
+	z-index:2000;
+	left:50px;
+}
 .mid{
 	height:75%;
+	position:relative;
 }
 .sidebar, .main{
 	height:100%;
@@ -39,6 +46,7 @@ header{
 	height:50%;
 	background:#F9A4EE;
 }
+
 .C{
 	height:50%;
 	background:#76F47D;
@@ -50,13 +58,16 @@ footer{
 	position: relative;
 	z-index: 1000;
 }
+#forecast_embed{
+	padding-top: 50px;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-
+<img class="logo" src="img/logo.png" alt=""/>
 </header>
 <div class="grid-row mid">
 	<div class="colspan-9 main">
@@ -96,7 +107,7 @@ footer{
 		</div>
 		<div class="C table">
 			<div class="cell">
-			<iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="80%" src="http://forecast.io/embed/#lat=43.752187&lon=-88.420715&name=Fond du Lac, Wi"> </iframe>
+			<iframe id="forecast_embed" type="text/html" frameborder="0" height="100%" width="80%" src="http://forecast.io/embed/#lat=43.752187&lon=-88.420715&name=Fond du Lac, Wi"> </iframe>
 				<!--<div id="myCarousel" class="carousel slide">
 				<div class="carousel-inner">
 					<div class="active item"><iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="80%" src="http://forecast.io/embed/#lat=43.752187&lon=-88.420715&name=Fond du Lac, Wi"> </iframe></div>
