@@ -702,3 +702,8 @@ hr {
 .light-bg {
   background: #A5FDB5;
 }
+
+/* line 10, ../scss/_helpers.scss */
+.shadow-inset {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px 5px inset;
+}
