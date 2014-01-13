@@ -30,6 +30,8 @@ header{
 .logo{
 	position:absolute;
 	width:325px;
+	
+	
 	z-index:2000;
 	left:10px;
 }
@@ -48,9 +50,17 @@ header{
 	height:50%;
 }
 .C{
-	background: #9BFFBF;
 	height:50%;
 }
+.weather{
+	background: #9BFFBF;
+}
+.clock{
+	background:#f19a33;
+	height:100%;
+	position:relative;
+}
+
 footer{
 	height:11.481481481481481%;
 	width:100%;
@@ -120,12 +130,22 @@ footer{
 					</div>
 			</div>
 		</div>
-		<div class="C table">
+		
+		<!--<div class="C table weather">
 			<div class="cell">
 			<iframe id="forecast_embed" type="text/html" frameborder="0" height="200" width="70%" src="http://forecast.io/embed/#lat=43.752187&lon=-88.420715&name=Fond du Lac, Wi"> </iframe>
-
+			</div>
+		</div>-->
+		
+		<div class="C table">
+			<div class="cell">
+					<div class="clock">
+						<iframe scrolling="no" frameborder="0" style="overflow:hidden;border:0;margin:0;padding:0;padding-top: 45px;width:250px;height:250px;" src="http://www.clocklink.com/html5embed.php?clock=001&timezone=CST&color=orange&size=250"></iframe>
+					</div>
+			
 			</div>
 		</div>
+		
 	</div>
 </div>
 <footer>
