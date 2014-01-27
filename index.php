@@ -1,9 +1,10 @@
-<!doctype html>
+<?php include_once "init.php" ?><?php include_once "inc/core.php" ?><!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>TV Screen app</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<?php include_once "inc/tv-app.php" ?>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
@@ -60,9 +61,11 @@ header{
 	background:#f19a33;
 	height:100%;
 	position:relative;
-
+	
 }
-
+.test{
+	border:1px solid white;
+}
 footer{
 	height:11.481481481481481%;
 	width:100%;
@@ -103,10 +106,9 @@ footer{
 		<div class="A shadow-inset">
 				<div id="myCarousel" class="carousel slide">
 				<div class="carousel-inner">
-					<div class="active item"><img src="img/slide4.png" alt=""/> </div>
-					<div class="item"> <img src="img/slide2.png"  alt=""/> </div>
-					<div class="item"> <img src="img/slide3.png"  alt=""/> </div>
-					<div class="item"> <img src="img/slide1.png"  alt=""/> </div>
+			
+					<?php loadSlide(1); ?>
+
 				</div>
 		</div>
 		</div>
@@ -114,25 +116,11 @@ footer{
 	<div class="colspan-3 sidebar">
 		<div class="B table">
 			<div class="cell">
-				<div id="myCarouselB" class="carousel slide carousel-fade ">
-						
+				<div id="myCarouselB" class="carousel slide carousel-fade ">				
 							<div class="carousel-inner">
-								<div class="active item"> <img src="img/kelsi.jpg" alt=""/></div>
-								<div class="item"> <img src="img/tracy.jpg" alt=""/></div>
-								<div class="item"> <img src="img/ashley.jpg" alt=""/></div>
-								<div class="item"> <img src="img/gina.jpg" alt=""/></div>
-								<div class="item"> <img src="img/matt.jpg" alt=""/></div>
-								<div class="item"> <img src="img/nick.jpg" alt=""/></div>
-								<div class="item"> <img src="img/julie.jpg" alt=""/></div>
-								<div class="item"> <img src="img/will.jpg" alt=""/></div>
-								<div class="item"> <img src="img/scottb.jpg" alt=""/></div>
-								<div class="item"> <img src="img/rick.jpg" alt=""/></div>
-								<div class="item"> <img src="img/mark.jpg" alt=""/></div>
-								<div class="item"> <img src="img/corv.jpg" alt=""/></div>
-								<div class="item"> <img src="img/brian.jpg" alt=""/></div>
-								<div class="item"> <img src="img/kristi.jpg" alt=""/></div>
-								<div class="item"> <img src="img/steve.jpg" alt=""/></div>
-								<div class="item"> <img src="img/scott.jpg" alt=""/></div>
+
+							<?php loadSlide(2); ?>
+
 							</div>
 					</div>
 			</div>
@@ -177,9 +165,12 @@ footer{
 		
 		<div class="C table">
 			<div class="cell">
-					<div class="clock">
-						<iframe scrolling="no" frameborder="0" style="overflow:hidden;border:0;margin:0;padding:0;width:250px;height:250px;" src="http://www.clocklink.com/html5embed.php?clock=001&timezone=CST&color=orange&size=250"></iframe>
-					</div>
+			
+	
+					<?php loadSlide(3); ?>
+		
+
+					
 			</div>
 		</div>
 		
